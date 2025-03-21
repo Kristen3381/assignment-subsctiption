@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bloom & Glow Subscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bloom and Glow Subscription</h1>
+        <form id="subscriptionForm">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <span class="error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <span class="error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Create Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+                <span class="error" id="passwordError"></span>
+            </div>
+            <div class="form-group">
+                <label>Choose Your Plan:</label>
+                <div class="plan-options">
+                    <label><input type="radio" name="plan" value="basic" data-price="10" checked> Basic Bloom (10K/month)</label>
+                    <label><input type="radio" name="plan" value="premium" data-price="25"> Radiant Glow (25K/month)</label>
+                    <label><input type="radio" name="plan" value="deluxe" data-price="50"> Deluxe Delight (50K/month)</label>
+                </div>
+            </div>
+            <button type="submit">Join the Bloom</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
